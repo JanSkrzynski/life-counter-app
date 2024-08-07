@@ -1,17 +1,12 @@
 import "./App.css";
-import {
-  ButtonPrimary,
-  ButtonSecondary,
-  ButtonTertiary,
-} from "./view/components/Button/Button";
+import Icon from "./view/components/Icon/Icon";
 
 function App() {
   return (
     <>
       <h1>Hello World</h1>
-      <ButtonPrimary />
-      <ButtonSecondary />
-      <ButtonTertiary />
+
+      <Icon name="ADD" />
     </>
   );
 }

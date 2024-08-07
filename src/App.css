@@ -157,3 +157,7 @@ a {
 a:hover {
   color: var(--clr-primary-accent);
 }
+
+svg {
+  fill: currentColor;
+}
