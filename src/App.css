@@ -1,42 +1,154 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:root {
+  /* Colors */
+  --clr-primary-background: hsl(0, 0%, 96%);
+  --clr-secondary-background: hsl(0, 0%, 100%);
+  --clr-primary-text: hsl(0, 0%, 20%);
+  --clr-secondary-text: hsl(0, 0%, 40%);
+  --clr-link: hsl(211, 100%, 50%);
+  --clr-primary-accent: hsl(134, 61%, 41%);
+  --clr-secondary-accent: hsl(45, 100%, 51%);
+  --clr-tertiary-accent: hsl(354, 70%, 54%);
+
+  /* Fonts */
+  --ff-primary: "Poppins", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+
+  /* Font size */
+  --fs-h1: 2.025rem;
+  --fs-h2: 1.8rem;
+  --fs-h3: 1.6rem;
+  --fs-h4: 1.425rem;
+  --fs-h5: 1.2625rem;
+  --fs-h6: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.8875rem;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  /* Border radius */
+  --radius-small: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 1rem;
+
+  /* Shadows */
+  --shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  color: var(--clr-primary-text);
+  background-color: var(--clr-primary-background);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-500);
 }
 
-.card {
-  padding: 2em;
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-500);
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-500);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-500);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-500);
+}
+
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-500);
+}
+
+p {
+  margin-bottom: var(--spacing-medium);
+}
+
+a {
+  color: var(--clr-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-primary-accent);
 }
