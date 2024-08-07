@@ -72,6 +72,11 @@ h6 {
   --clr-secondary-accent: hsl(45, 100%, 51%);
   --clr-tertiary-accent: hsl(354, 70%, 54%);
 
+  --clr-primary-accent-hover: hsl(134, 61%, 41%, 80%);
+  --clr-secondary-accent-hover: hsl(45, 100%, 51%, 80%);
+  --clr-tertiary-accent-hover: hsl(354, 70%, 54%, 80%);
+  --clr-link: hsl(211, 100%, 50%, 80%);
+
   /* Fonts */
   --ff-primary: "Poppins", sans-serif;
   --fw-400: 400;
@@ -90,12 +95,12 @@ h6 {
   /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
-  --spacing-large: 2rem;
+  --spacing-large: 3rem;
 
   /* Border radius */
-  --radius-small: 0.25rem;
-  --radius-medium: 0.5rem;
-  --radius-large: 1rem;
+  --border-radius-small: 0.25rem;
+  --border-radius-medium: 0.5rem;
+  --border-radius-large: 1rem;
 
   /* Shadows */
   --shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
