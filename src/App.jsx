@@ -1,12 +1,14 @@
 import "./App.css";
 import Icon from "./view/components/Icon/Icon";
+import Tag from "./view/components/Tag/Tag";
 
 function App() {
   return (
     <>
       <h1>Hello World</h1>
 
-      <Icon name="ADD" />
+      <Tag tagText="Hello" iconName="add" />
+      {/* <Icon name="sportsSoccer" /> */}
     </>
   );
 }

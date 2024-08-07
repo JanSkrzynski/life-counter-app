@@ -1,0 +1,9 @@
+.tag {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--clr-link);
+  color: var(--clr-primary-background);
+  cursor: pointer;
+}
