@@ -10,6 +10,7 @@ import FormFieldPage from "../FormField/FormFieldPage";
 import ActivityPage from "../Activity/ActivityPage";
 import Main from "../Main/Main";
 import Add from "../Add/Add";
+import Components from "../Components/Components";
 
 const Authentication = () => {
   return (
@@ -18,6 +19,7 @@ const Authentication = () => {
         <Route path={ROUTES.home} element={<Home />} />
         <Route path={ROUTES.main} element={<Main />} />
         <Route path={ROUTES.add} element={<Add />} />
+        <Route path={ROUTES.components} element={<Components />} />
         <Route path={ROUTES.icon} element={<IconPage />} />
         <Route path={ROUTES.button} element={<ButtonPage />} />
         <Route path={ROUTES.tag} element={<TagPage />} />

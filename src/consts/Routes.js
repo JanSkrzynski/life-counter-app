@@ -2,6 +2,7 @@ const ROUTES = {
   home: "/",
   main: "/main",
   add: "/add",
+  components: "/components",
   notFound: "*",
   icon: "/icon",
   button: "/button",
