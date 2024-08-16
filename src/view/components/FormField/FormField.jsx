@@ -1,4 +1,5 @@
 import React from "react";
+import style from "./FormField.module.css";
 
 /*
 
@@ -23,7 +24,13 @@ const FormField = ({
   return (
     <div>
       <label htmlFor={name}>{label}</label>
-      <input id={name} name={name} type="text" placeholder="Hello" />
+      <input
+        className={style.search}
+        id={name}
+        name={name}
+        type="text"
+        placeholder={placeholder}
+      />
     </div>
   );
 };

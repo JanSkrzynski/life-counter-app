@@ -3,8 +3,8 @@ import style from "./Activity.module.css";
 import { Tag } from "../Tag/Tag";
 import Icon from "../Icon/Icon";
 
-const Activity = () => {
-  const [count, setCount] = useState(1);
+const Activity = ({ activity = "Activity" }) => {
+  const [count, setCount] = useState(0);
 
   const increaseCount = () => {
     setCount(count + 1);
@@ -20,8 +20,8 @@ const Activity = () => {
         <span className={style.count}>{count}</span> x
       </div>
       <div className={style.card__center}>
-        <h3>Activity</h3>
-        <Tag iconName="add">Activity</Tag>
+        <h3>{activity}</h3>
+        <Tag iconName="add" />
       </div>
       <div className={style.card__right}>
         <Icon

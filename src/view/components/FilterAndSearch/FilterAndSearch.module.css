@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+  background-color: var(--clr-secondary-background);
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
+  box-shadow: var(--shadow);
+
+  & .tags {
+    display: flex;
+    gap: var(--spacing-small);
+  }
+}

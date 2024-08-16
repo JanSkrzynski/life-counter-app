@@ -2,11 +2,13 @@
   display: flex;
   gap: var(--spacing-small);
   align-items: center;
+  color: var(--clr-primary-background);
   justify-items: center;
   background-color: var(--clr-primary-accent);
   padding: var(--spacing-small) var(--spacing-medium);
   font-size: var(--fs-h6);
   border-radius: var(--border-radius-large);
+  border: none;
 
   &:hover {
     background-color: var(--clr-primary-accent-hover);
