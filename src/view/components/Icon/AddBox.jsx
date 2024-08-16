@@ -1,11 +1,11 @@
 import React from "react";
 
-const AddBox = ({ className, width, height }) => {
+const AddBox = ({ className }) => {
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

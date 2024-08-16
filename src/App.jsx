@@ -1,14 +1,20 @@
-import "./App.css";
-import Icon from "./view/components/Icon/Icon";
-import Tag from "./view/components/Tag/Tag";
+import "./App.module.css";
+import {
+  Tag,
+  TagPrimary,
+  TagSecondary,
+  TagTertiary,
+} from "./view/components/Tag/Tag";
 
 function App() {
   return (
     <>
       <h1>Hello World</h1>
 
-      <Tag tagText="Hello" iconName="add" />
-      {/* <Icon name="sportsSoccer" /> */}
+      <Tag tagText="Hello" iconName="winebar" />
+      <TagPrimary tagText="Hello" iconName="winebar" />
+      <TagSecondary tagText="Hello" iconName="winebar" />
+      <TagTertiary tagText="Hello" iconName="winebar" />
     </>
   );
 }

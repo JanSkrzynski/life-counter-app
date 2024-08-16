@@ -1,9 +1,38 @@
 .tag {
   display: flex;
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-500);
+  gap: var(--spacing-small);
   align-items: center;
+  justify-content: space-between;
   padding: var(--spacing-small) var(--spacing-medium);
   border-radius: var(--border-radius-medium);
   background-color: var(--clr-link);
   color: var(--clr-primary-background);
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--clr-link-hover);
+  }
+
+  &.tag__primary {
+    background-color: var(--clr-primary-accent);
+    &:hover {
+      background-color: var(--clr-primary-accent-hover);
+    }
+  }
+
+  &.tag__secondary {
+    background-color: var(--clr-secondary-accent);
+    &:hover {
+      background-color: var(--clr-secondary-accent-hover);
+    }
+  }
+
+  &.tag__tertiary {
+    background-color: var(--clr-tertiary-accent);
+    &:hover {
+      background-color: var(--clr-tertiary-accent-hover);
+    }
+  }
 }

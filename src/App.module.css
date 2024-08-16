@@ -75,7 +75,7 @@ h6 {
   --clr-primary-accent-hover: hsl(134, 61%, 41%, 80%);
   --clr-secondary-accent-hover: hsl(45, 100%, 51%, 80%);
   --clr-tertiary-accent-hover: hsl(354, 70%, 54%, 80%);
-  --clr-link: hsl(211, 100%, 50%, 80%);
+  --clr-link-hover: hsl(211, 100%, 50%, 80%);
 
   /* Fonts */
   --ff-primary: "Poppins", sans-serif;

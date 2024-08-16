@@ -1,11 +1,11 @@
 import React from "react";
 
-const Share = ({ className, width, height }) => {
+const Share = ({ className }) => {
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
+      width="25"
+      height="28"
       viewBox="0 0 25 28"
       xmlns="http://www.w3.org/2000/svg"
     >

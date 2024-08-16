@@ -1,11 +1,11 @@
 import React from "react";
 
-const AccountBalance = ({ className, width, height }) => {
+const AccountBalance = ({ className }) => {
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
+      width="30"
+      height="31"
       viewBox="0 0 30 31"
       xmlns="http://www.w3.org/2000/svg"
     >

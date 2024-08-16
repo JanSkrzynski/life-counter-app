@@ -1,11 +1,11 @@
 import React from "react";
 
-const Diversity1 = ({ className, width, height }) => {
+const Diversity1 = ({ className }) => {
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
+      width="36"
+      height="29"
       viewBox="0 0 36 29"
       xmlns="http://www.w3.org/2000/svg"
     >
