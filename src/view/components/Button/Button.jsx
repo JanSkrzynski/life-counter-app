@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Button.module.css";
 import Icon from "../Icon/Icon";
+import { Link } from "react-router-dom";
 
 /*
 
@@ -22,38 +23,67 @@ HOW TO USE BUTTON COMPONENT
     - Share
     - SportsSoccer
     - WineBar
+4. You can also give the button an 'onClick' prop with a function that you want to execute when the button is clicked.
+5. You can also give the button a 'to' prop with the path you want to navigate to when the button is clicked.
 
-    Example:
-      <Button buttonText="Hello" iconName="winebar" />
+
+EXAMPLE:
+<ButtonPrimary
+  buttonText="Button"
+  iconName="add"
+  onClick={() => {
+    console.log("Button clicked");
+  }}
+    to={ROUTES.home}
 
 */
 
-export const ButtonPrimary = ({ buttonText = "Button", iconName = "add" }) => {
+export const ButtonPrimary = ({
+  buttonText = "Button",
+  iconName = "add",
+  onClick,
+  to,
+}) => {
   return (
-    <button className={style.button}>
+    <Link to={to} onClick={onClick} className={style.button}>
       {buttonText}
       {iconName && <Icon name={iconName} />}
-    </button>
+    </Link>
   );
 };
 
 export const ButtonSecondary = ({
   buttonText = "Button",
   iconName = "add",
+  onClick,
+  to,
 }) => {
   return (
-    <button className={`${style.button} ${style.button__secondary}`}>
+    <Link
+      to={to}
+      onClick={onClick}
+      className={`${style.button} ${style.button__secondary}`}
+    >
       {buttonText}
       {iconName && <Icon name={iconName} />}
-    </button>
+    </Link>
   );
 };
 
-export const ButtonTertiary = ({ buttonText = "Button", iconName = "add" }) => {
+export const ButtonTertiary = ({
+  buttonText = "Button",
+  iconName = "add",
+  onClick,
+  to,
+}) => {
   return (
-    <button className={`${style.button} ${style.button__tertiary}`}>
+    <Link
+      to={to}
+      onClick={onClick}
+      className={`${style.button} ${style.button__tertiary}`}
+    >
       {buttonText}
       {iconName && <Icon name={iconName} />}
-    </button>
+    </Link>
   );
 };

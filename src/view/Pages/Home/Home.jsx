@@ -1,9 +1,9 @@
 import React from "react";
-import MainPage from "../../components/MainPage/MainPage";
+import HomePage from "../../components/HomePage/HomePage";
 function Home() {
   return (
     <>
-      <MainPage />
+      <HomePage />
     </>
   );
 }

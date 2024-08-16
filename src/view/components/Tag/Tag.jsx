@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Tag.module.css";
 import Icon from "../Icon/Icon";
+import { Link } from "react-router-dom";
 
 /*
 
@@ -22,44 +23,45 @@ HOW TO USE TAG COMPONENT
     - Share
     - SportsSoccer
     - WineBar
+4. You can also give the tag a 'to' prop with the path you want to navigate to when the tag is clicked.
 
     Example:
       <Tag tagText="Hello" iconName="winebar" />
 
 */
 
-export const Tag = ({ iconName, tagText = "Tag" }) => {
+export const Tag = ({ iconName, tagText = "Tag", to }) => {
   return (
-    <div className={style.tag}>
+    <Link to={to} className={style.tag}>
       {iconName && <Icon name={iconName} />}
       {tagText}
-    </div>
+    </Link>
   );
 };
 
-export const TagPrimary = ({ iconName, tagText = "Tag" }) => {
+export const TagPrimary = ({ iconName, tagText = "Tag", to }) => {
   return (
-    <div className={`${style.tag} ${style.tag__primary}`}>
+    <Link to={to} className={`${style.tag} ${style.tag__primary}`}>
       {iconName && <Icon name={iconName} />}
       {tagText}
-    </div>
+    </Link>
   );
 };
 
-export const TagSecondary = ({ iconName, tagText = "Tag" }) => {
+export const TagSecondary = ({ iconName, tagText = "Tag", to }) => {
   return (
-    <div className={`${style.tag} ${style.tag__secondary}`}>
+    <Link to={to} className={`${style.tag} ${style.tag__secondary}`}>
       {iconName && <Icon name={iconName} />}
       {tagText}
-    </div>
+    </Link>
   );
 };
 
-export const TagTertiary = ({ iconName, tagText = "Tag" }) => {
+export const TagTertiary = ({ iconName, tagText = "Tag", to }) => {
   return (
-    <div className={`${style.tag} ${style.tag__tertiary}`}>
+    <Link to={to} className={`${style.tag} ${style.tag__tertiary}`}>
       {iconName && <Icon name={iconName} />}
       {tagText}
-    </div>
+    </Link>
   );
 };

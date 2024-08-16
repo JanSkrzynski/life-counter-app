@@ -1,8 +1,9 @@
 import React from "react";
 
-const SportsSoccer = ({ className }) => {
+const SportsSoccer = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="30"
       height="30"

@@ -1,8 +1,9 @@
 import React from "react";
 
-const ArrowForward = ({ className }) => {
+const ArrowForward = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="22"
       height="22"

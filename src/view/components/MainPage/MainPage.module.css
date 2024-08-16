@@ -9,6 +9,13 @@
     gap: var(--spacing-medium);
     align-content: center;
     justify-content: space-between;
+
+    & .add_activity {
+      &:hover {
+        color: var(--clr-primary-accent);
+        cursor: pointer;
+      }
+    }
   }
 
   & .main__activities {

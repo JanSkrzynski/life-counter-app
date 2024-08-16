@@ -1,8 +1,9 @@
 import React from "react";
 
-const AddCircle = ({ className }) => {
+const AddCircle = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="28"
       height="28"

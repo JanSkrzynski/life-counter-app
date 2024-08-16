@@ -13,12 +13,14 @@
 
   &:hover {
     background-color: var(--clr-link-hover);
+    color: var(--clr-primary-background);
   }
 
   &.tag__primary {
     background-color: var(--clr-primary-accent);
     &:hover {
       background-color: var(--clr-primary-accent-hover);
+      color: var(--clr-primary-background);
     }
   }
 
@@ -26,6 +28,7 @@
     background-color: var(--clr-secondary-accent);
     &:hover {
       background-color: var(--clr-secondary-accent-hover);
+      color: var(--clr-primary-background);
     }
   }
 
@@ -33,6 +36,7 @@
     background-color: var(--clr-tertiary-accent);
     &:hover {
       background-color: var(--clr-tertiary-accent-hover);
+      color: var(--clr-primary-background);
     }
   }
 }

@@ -1,8 +1,9 @@
 import React from "react";
 
-const WineBar = ({ className }) => {
+const WineBar = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="18"
       height="28"

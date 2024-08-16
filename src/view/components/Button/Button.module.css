@@ -7,11 +7,13 @@
   background-color: var(--clr-primary-accent);
   padding: var(--spacing-small) var(--spacing-medium);
   font-size: var(--fs-h6);
-  border-radius: var(--border-radius-large);
+  border-radius: var(--border-radius-medium);
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--clr-primary-accent-hover);
+    color: var(--clr-primary-background);
   }
 
   &.button__secondary {
@@ -19,6 +21,7 @@
 
     &:hover {
       background-color: var(--clr-secondary-accent-hover);
+      color: var(--clr-primary-background);
     }
   }
 
@@ -27,6 +30,7 @@
 
     &:hover {
       background-color: var(--clr-tertiary-accent-hover);
+      color: var(--clr-primary-background);
     }
   }
 }

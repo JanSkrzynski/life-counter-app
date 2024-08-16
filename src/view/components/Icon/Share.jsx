@@ -1,8 +1,9 @@
 import React from "react";
 
-const Share = ({ className }) => {
+const Share = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="25"
       height="28"

@@ -1,8 +1,9 @@
 import React from "react";
 
-const Diversity1 = ({ className }) => {
+const Diversity1 = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="36"
       height="29"

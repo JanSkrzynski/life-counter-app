@@ -12,6 +12,7 @@ const Activity = ({ activity = "Activity" }) => {
 
   const decreaseCount = () => {
     setCount(count - 1);
+    count === 0 && setCount(0);
   };
 
   return (
@@ -19,16 +20,19 @@ const Activity = ({ activity = "Activity" }) => {
       <div className={style.card__left}>
         <span className={style.count}>{count}</span> x
       </div>
+
       <div className={style.card__center}>
         <h3>{activity}</h3>
         <Tag iconName="add" />
       </div>
+
       <div className={style.card__right}>
         <Icon
           className={style.button}
           name="AddCircle"
           onClick={increaseCount}
         />
+
         <Icon
           className={`${style.button} ${style.button__negative}`}
           name="dnd"

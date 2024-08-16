@@ -1,8 +1,9 @@
 import React from "react";
 
-const Add = ({ className }) => {
+const Add = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="20"
       height="20"

@@ -1,8 +1,9 @@
 import React from "react";
 
-const AccountBalance = ({ className }) => {
+const AccountBalance = ({ className, onClick }) => {
   return (
     <svg
+      onClick={onClick}
       className={className}
       width="30"
       height="31"
