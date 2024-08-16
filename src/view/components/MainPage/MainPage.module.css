@@ -1,0 +1,21 @@
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-medium);
+
+  & .main__header {
+    display: flex;
+    gap: var(--spacing-medium);
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  & .main__activities {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-small);
+    gap: var(--spacing-medium);
+    padding-bottom: 40vh;
+  }
+}
