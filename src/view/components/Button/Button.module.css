@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  gap: var(--spacing-small);
+  align-items: center;
+  justify-items: center;
   background-color: var(--clr-primary-accent);
   padding: var(--spacing-small) var(--spacing-medium);
   font-size: var(--fs-h6);

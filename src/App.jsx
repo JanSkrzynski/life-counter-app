@@ -1,22 +1,13 @@
+import React from "react";
 import "./App.module.css";
-import {
-  Tag,
-  TagPrimary,
-  TagSecondary,
-  TagTertiary,
-} from "./view/components/Tag/Tag";
+import Authentication from "./view/Pages/Authentication/Authentication";
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1>Hello World</h1>
-
-      <Tag tagText="Hello" iconName="winebar" />
-      <TagPrimary tagText="Hello" iconName="winebar" />
-      <TagSecondary tagText="Hello" iconName="winebar" />
-      <TagTertiary tagText="Hello" iconName="winebar" />
+      <Authentication />
     </>
   );
-}
+};
 
 export default App;
