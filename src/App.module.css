@@ -107,6 +107,8 @@ h6 {
 }
 
 body {
+  width: 100%;
+  height: 100%;
   font-family: var(--ff-primary);
   font-weight: var(--fw-400);
   font-size: var(--fs-body);
@@ -160,4 +162,20 @@ a:hover {
 
 svg {
   fill: currentColor;
+}
+
+label {
+  display: block;
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-500);
+  margin-bottom: var(--spacing-small);
+}
+
+input {
+  padding: var(--spacing-small);
+  border-radius: var(--border-radius-medium);
+  border: none;
+  background-color: var(--clr-secondary-background);
+  box-shadow: var(--shadow);
+  color: var(--clr-primary-text);
 }
